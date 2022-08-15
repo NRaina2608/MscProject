@@ -36,7 +36,7 @@ def display_library_version(library):
 def setup_chapter():
     # Check if we have a GPU
     if not is_gpu_available:
-        print("No GPU was detected! This notebook can be *very* slow without a GPU 🐢")
+        print("No GPU was detected! This notebook can be *very* slow without a GPU ")
         if is_colab:
             print("Go to Runtime > Change runtime type and select a GPU hardware accelerator.")
         if is_kaggle:
@@ -55,7 +55,7 @@ def setup_chapter():
 
 
 def wrap_print_text(print):
-    """Adapted from: https://stackoverflow.com/questions/27621655/how-to-overload-print-function-to-expand-its-functionality/27621927"""
+    
 
     def wrapped_func(text):
         if not isinstance(text, str):
